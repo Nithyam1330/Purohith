@@ -20,8 +20,10 @@ export class PurohithListPage {
     this.purohitList = new PurohithiList().list;
   }
 
-  goToPurohitDetail() {
-    this.navCtrl.push(PurohitDetailsPage);
+  goToPurohitDetail(purohitInfo) {
+    this.navCtrl.push(PurohitDetailsPage, {
+      data: purohitInfo
+    });
   }
   navigateToCity() {
     this.navCtrl.push(CitiesPage);

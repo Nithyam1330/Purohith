@@ -7,14 +7,17 @@ import { CallNumber } from '@ionic-native/call-number';
   templateUrl: 'purohit-details.html',
 })
 export class PurohitDetailsPage {
+  purohitInfo: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private callNumber: CallNumber) {
+    this.purohitInfo = this.navParams.get('data');
+    console.log(this.purohitInfo);
   }
 
   call() {
-    this.callNumber.callNumber("18001010101", true)
-  .then(res => console.log('Launched dialer!', res))
-  .catch(err => console.log('Error launching dialer', err));
+    this.callNumber.callNumber(this.purohitInfo.phone, true)
+      .then(res => console.log('Launched dialer!', res))
+      .catch(err => console.log('Error launching dialer', err));
   }
   ionViewDidLoad() {
   }

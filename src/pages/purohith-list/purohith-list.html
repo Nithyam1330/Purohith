@@ -29,7 +29,7 @@
   <h1 text-center class="sub-heading">in Varanasi</h1>
 
   <ng-container *ngFor="let purohit of purohitList">
-    <ion-card class="card" (click)="goToPurohitDetail()">
+    <ion-card class="card" (click)="goToPurohitDetail(purohit)">
       <ion-item class="card-item">
         <ion-avatar item-start>
           <img [src]="purohit.image">

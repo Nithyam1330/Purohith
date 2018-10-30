@@ -1,3 +1,20 @@
 page-purohit-details {
-
+    .bg-color {
+        //  background-color: orange;
+        background-image: url(../../assets/imgs/background.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    ion-navbar.toolbar {
+        height: 60px;
+    }
+    .toolbar-title.toolbar-title-md, 
+    .toolbar-title.toolbar-title-ios, 
+    .toolbar-title.toolbar-title-wp { 
+        color: yellow;
+        padding: 12px;
+        font-family: initial;
+        font-weight: 400;
+        font-size: 25px;
+    }
 }
