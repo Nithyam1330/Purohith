@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { PurohithiList } from './purohith-list.model';
+import { PurohitDetailsPage } from '../purohit-details/purohit-details';
+import { CitiesPage } from '../cities/cities';
 
 @Component({
   selector: 'page-purohith-list',
@@ -16,5 +18,12 @@ export class PurohithListPage {
   }
   initVaranasiList() {
     this.purohitList = new PurohithiList().list;
+  }
+
+  goToPurohitDetail() {
+    this.navCtrl.push(PurohitDetailsPage);
+  }
+  navigateToCity() {
+    this.navCtrl.push(CitiesPage);
   }
 }

@@ -8,13 +8,16 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { CitiesPage } from '../pages/cities/cities';
 import { PurohithListPage } from '../pages/purohith-list/purohith-list';
+import { PurohitDetailsPage } from '../pages/purohit-details/purohit-details';
+import { CallNumber } from '@ionic-native/call-number';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     CitiesPage,
-    PurohithListPage
+    PurohithListPage,
+    PurohitDetailsPage
   ],
   imports: [
     BrowserModule,
@@ -25,11 +28,13 @@ import { PurohithListPage } from '../pages/purohith-list/purohith-list';
     MyApp,
     HomePage,
     CitiesPage,
-    PurohithListPage
+    PurohithListPage,
+    PurohitDetailsPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    CallNumber,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
