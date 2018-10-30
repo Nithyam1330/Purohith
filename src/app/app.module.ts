@@ -6,11 +6,15 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { CitiesPage } from '../pages/cities/cities';
+import { PurohithListPage } from '../pages/purohith-list/purohith-list';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    CitiesPage,
+    PurohithListPage
   ],
   imports: [
     BrowserModule,
@@ -19,7 +23,9 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    CitiesPage,
+    PurohithListPage
   ],
   providers: [
     StatusBar,

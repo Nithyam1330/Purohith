@@ -1,14 +1,25 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content padding class="bg-color">
+    <div text-center>
+        <img src="../../assets/imgs/logo.png" />
+        <h1 class="label">Login</h1>
+    </div>
+    <ion-list>
+        <ion-item >
+          <ion-label floating>Username</ion-label>
+          <ion-input type="text" value=""></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label floating>Password</ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>
+      </ion-list>
+      <button ion-button block class="login">Login</button>
+      <p class="para para-bold" text-center>- or -</p>
+      <!-- <p class="para1" text-center>Connect with</p> -->
+      <!-- <button ion-button icon-start block class="signInWithGoogle" text-capitalize>
+          <ion-icon  name="logo-googleplus" ></ion-icon>
+          &nbsp;Sign in With google
+        </button> -->
+        <p class="para" text-center (click)="skipLogin()">Skip</p>
 </ion-content>

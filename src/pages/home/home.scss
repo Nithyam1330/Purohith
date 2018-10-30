@@ -1,3 +1,56 @@
 page-home {
-
+ .bg-color {
+    //  background-color: orange;
+    background-image: url(../../assets/imgs/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    div.scroll-content {
+        padding: 16px 32px 16px 32px !important;
+    }
+     img {
+        height: 150px !important;
+        width: auto !important;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-top: 75px;
+        margin-left: 15px;
+        }
+    h1.label {
+        color: white;
+        margin-top: 10px 0px 10px 0px;
+    }
+    ion-item {
+        background-color: #FF9A04;
+        ion-label.label-md {
+            color: white !important;
+        }
+    }
+    button.login {
+    background-color: #FFD33C;
+    color: #703A01;
+    font-weight: bold;
+    font-size: 18px;
+    }
+    p.para  {
+        color: maroon;
+        font-size: 20px;
+        margin: 15px 0px 15px 0px;
+    }
+    p.para-bold {
+        font-weight: bold;
+    }
+    p.para1 {
+        color: white;
+        font-size: 16px;
+        margin: 0px 0px 7px 0px;
+    }
+    button.signInWithGoogle {
+        color: white;
+        background-color: #E44832;
+        font-size: 16px;
+        height: 50px;
+    }
+ }
 }

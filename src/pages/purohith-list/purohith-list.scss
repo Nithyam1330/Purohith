@@ -1,0 +1,53 @@
+page-purohith-list {
+    .bg-color {
+        //  background-color: orange;
+        background-image: url(../../assets/imgs/background.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    } 
+        ion-navbar.toolbar {
+            height: 60px;
+        }
+        .toolbar-title.toolbar-title-md, 
+        .toolbar-title.toolbar-title-ios, 
+        .toolbar-title.toolbar-title-wp { 
+            color: yellow;
+            padding: 12px;
+            font-family: initial;
+            font-weight: 400;
+            font-size: 25px;
+        }
+        .heading {
+            color: #690D0D;
+            font-size: 32px;
+            font-weight: 400;
+        }
+        .sub-heading {
+            font-size: 32px;
+            color: white;
+            font-weight: 400;
+            margin-top:-5px;      
+            margin-bottom: 30px;  
+            font-weight: 100;
+        }
+        .card {
+            border-radius: 8px;
+        }
+        .card-item {
+            background-color: #FFA006;
+        }
+        .card-heading {
+            font-size: 25px;
+            color: maroon;
+        }
+        .card-subheading {
+            color: white;
+            font-size: 15px;
+        }
+        .item-md ion-avatar ion-img, .item-md ion-avatar img {
+            border-radius: 50%;
+            overflow: hidden;
+            width: 70px;
+            height: 70px;
+        }
+}

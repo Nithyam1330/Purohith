@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar hideBackButton="true">
+    <ion-grid>
+      <ion-row>
+        <ion-col text-start>
+          <ion-avatar>
+            <img src="../../assets/imgs/logo-icon.png" height="55" width="55">
+          </ion-avatar>
+        </ion-col>
+        <ion-col text-center>
+          <ion-title>PUROHITJI</ion-title>
+        </ion-col>
+        <ion-col>
+             <ion-buttons end class="m-t-10">
+        <button ion-button icon-only >
+          <ion-icon name="menu"></ion-icon>
+        </button>
+      </ion-buttons>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="bg-color">
+  <h1 text-center padding-top class="heading">Pandits</h1>
+  <h1 text-center class="sub-heading">in Varanasi</h1>
+
+  <ng-container *ngFor="let purohit of purohitList">
+  <ion-card class="card">
+    <ion-item class="card-item">
+      <ion-avatar item-start>
+        <img [src]="purohit.image">
+      </ion-avatar>
+      <h2 padding-left class="card-heading">{{purohit.name}}</h2>
+      <p padding-left class="card-subheading">{{purohit.experience}}</p>
+    </ion-item>
+  </ion-card>
+</ng-container>
+</ion-content>
