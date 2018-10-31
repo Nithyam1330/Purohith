@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, Platform } from 'ionic-angular';
 import { PurohithListPage } from '../purohith-list/purohith-list';
 
 
@@ -8,7 +8,10 @@ import { PurohithListPage } from '../purohith-list/purohith-list';
   templateUrl: 'cities.html',
 })
 export class CitiesPage {
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private platform: Platform) {
+    this.platform.registerBackButtonAction(() => {
+      this.platform.exitApp();
+    })
   }
   goToPurohithList() {
     this.navCtrl.push(PurohithListPage, {
