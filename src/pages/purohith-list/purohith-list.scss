@@ -16,6 +16,7 @@ page-purohith-list {
             font-family: initial;
             font-weight: 400;
             font-size: 25px;
+            font-weight: bold;
         }
         .heading {
             color: #690D0D;
@@ -30,6 +31,9 @@ page-purohith-list {
             margin-bottom: 30px;  
             font-weight: 100;
         }
+        ion-content .div.scroll-content {
+            margin-top: 80px;
+        }
         .card {
             border-radius: 8px;
         }
@@ -38,7 +42,7 @@ page-purohith-list {
         }
         .card-heading {
             font-size: 25px;
-            color: maroon;
+            color: #690D0D;
         }
         .card-subheading {
             color: white;

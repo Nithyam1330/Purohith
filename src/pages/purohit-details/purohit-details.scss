@@ -16,5 +16,101 @@ page-purohit-details {
         font-family: initial;
         font-weight: 400;
         font-size: 25px;
+        font-weight: bold;
+    }
+    ion-item {
+        padding: 0px !important;
+    }
+    ion-item div.item-inner {
+        padding: 0px !important;
+        background-image: url(../../assets/imgs/background-inner.png);
+        // opacity: 0.9;
+    }
+    .card {
+        border: 0.2px solid #5a544a;
+    }
+    .img-photo {
+        height: 125px;
+        width: 125px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 2px solid white;
+    }
+    .card-heading {
+        font-size: 25px;
+        color: #690D0D;
+        padding-top: 15px;
+    }
+    .card-subheading {
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .location {
+        height: 25px;
+        width: 22px;
+        display: inline-block;
+    }
+    div.locationDetails {
+        padding-left: 35px;
+        position: relative;
+        margin-top: 15px;
+    }
+    .locationDetails span {
+        position: absolute;
+        top: 2px;
+        left: 75px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .locationDetails button {
+        position: absolute;
+        left: 195px;
+        height: 28px;
+        background-color: #690D0D;
+        color: whitesmoke;
+        font-size: 14px;
+        font-weight: bold;
+        border-radius: 5px;
+        width: 85px;
+    }
+    .details {
+        font-size: 25px;
+        color: #690D0D;
+        padding-top: 25px;
+        font-size: 21px;
+        font-weight: 500;
+    }
+    .details-para {
+        padding: 10px 10px 0px 10px;
+        color: white;
+        font-size: 17px;
+        font-weight: bold;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+    .select-city {
+        padding: 25px 0px 0px 15px;
+        position: relative;
+    }
+    .select-city span {
+        position: absolute;
+        top: 33px;
+        font-size: 20px;
+        color: #690D0D;
+        font-weight: 500;
+        left: 70px;
+    }
+    .select-city img {
+        height: 35px;
+        width: 35px;
+        top: 26px;
+        position: absolute;
+        left: 23px;
     }
 }

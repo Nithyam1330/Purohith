@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { CallNumber } from '@ionic-native/call-number';
+import { CitiesPage } from '../cities/cities';
 
 @Component({
   selector: 'page-purohit-details',
@@ -11,13 +12,15 @@ export class PurohitDetailsPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private callNumber: CallNumber) {
     this.purohitInfo = this.navParams.get('data');
-    console.log(this.purohitInfo);
   }
 
   call() {
     this.callNumber.callNumber(this.purohitInfo.phone, true)
-      .then(res => console.log('Launched dialer!', res))
-      .catch(err => console.log('Error launching dialer', err));
+      .then(res => {})
+      .catch(err => {});
+  }
+  navigateToCity() {
+    this.navCtrl.push(CitiesPage);
   }
   ionViewDidLoad() {
   }

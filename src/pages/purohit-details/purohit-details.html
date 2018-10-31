@@ -1,9 +1,3 @@
-<!--
-  Generated template for the PurohitDetailsPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header (click)="navigateToCity()">
   <ion-navbar hideBackButton="true">
     <ion-grid>
@@ -26,10 +20,30 @@
       </ion-row>
     </ion-grid>
   </ion-navbar>
-
 </ion-header>
-
-
 <ion-content padding class="bg-color">
-  <button (click)="call()">Call</button>
+  <ion-card class="card">
+    <ion-item class="card-item" text-wrap>
+      <div>
+        <img class="img-photo" [src]="purohitInfo.image" height="100" width="100">
+      </div>
+      <h2 text-center class="card-heading">{{purohitInfo.name}}</h2>
+      <p text-center class="card-subheading">{{purohitInfo.type}}</p>
+      <div class="locationDetails">
+        <img src="../../assets/icon/location-icon.png" class="location">
+        <span class="card-subheading">{{purohitInfo.address}}</span>
+      </div>
+      <div class="locationDetails">
+        <img src="../../assets/icon/phone-icon.png" class="location">
+        <span class="card-subheading">{{purohitInfo.phone}}</span>
+        <button (click)="call()">Dail Now</button>
+      </div>
+      <h2 text-center class="details">Details</h2>
+      <div class="details-para" text-center>{{purohitInfo.details}}</div>
+    </ion-item>
+  </ion-card>
+  <div class="select-city">
+    <img src="../../assets/icon/city-icon.png">
+    <span class="sub-heading">Select City and Language</span>
+  </div>
 </ion-content>
