@@ -9,9 +9,9 @@ import { PurohithListPage } from '../purohith-list/purohith-list';
 })
 export class CitiesPage {
   constructor(public navCtrl: NavController, public navParams: NavParams, private platform: Platform) {
-    this.platform.registerBackButtonAction(() => {
-      this.platform.exitApp();
-    })
+    // this.platform.registerBackButtonAction(() => {
+    //   this.platform.exitApp();
+    // })
   }
   goToPurohithList() {
     this.navCtrl.push(PurohithListPage, {
