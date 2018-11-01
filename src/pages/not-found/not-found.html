@@ -1,18 +1,14 @@
-<!--
-  Generated template for the NotFoundPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
-
-  <ion-navbar>
-    <ion-title>notFound</ion-title>
-  </ion-navbar>
-
-</ion-header>
-
-
-<ion-content padding>
-
+<ion-content padding class="bg-image">
+  <div text-center>
+    <img class="logo" src="../../assets/imgs/logo.png" />
+    <p class="label">We are currently not operating in this city,we presume operations shortly</p>
+  </div>
+  <div class="row">
+    <div class="col-2">
+      <!-- empty space -->
+    </div>
+    <div class="col" text-center>
+      <button text-center ion-button class="back" (click)="popToCities()">Back</button>
+    </div>
+  </div>
 </ion-content>

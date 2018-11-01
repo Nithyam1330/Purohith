@@ -1,3 +1,35 @@
 page-not-found {
-
+    .bg-image {
+        background-image: url(../../assets/imgs/background.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        div.scroll-content {
+            padding: 16px 32px 16px 32px !important;
+        }
+         img.logo {
+            height: 115px !important;
+            width: auto !important;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            margin-top: 100px;
+            margin-left: 10px;
+            }
+        img.icons {
+            height: 70px;
+        }
+        .label {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            padding-top: 70px;
+        }
+        .back {
+            background-color: #FFD33C;
+            color: #703A01;
+            font-weight: bold;
+            font-size: 18px;
+            }
+}
 }
