@@ -1,0 +1,13 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>omManthra</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<button ion-button (click)="playAudio()" *ngIf="!isPlayMode">Play Audio</button>
+<button ion-button (click)="stopAudio()" *ngIf="isPlayMode">Stop Audio</button>
+</ion-content>

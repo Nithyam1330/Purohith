@@ -11,6 +11,7 @@ import { PurohithListPage } from '../pages/purohith-list/purohith-list';
 import { PurohitDetailsPage } from '../pages/purohit-details/purohit-details';
 import { CallNumber } from '@ionic-native/call-number';
 import { NotFoundPage } from '../pages/not-found/not-found';
+import { OmManthraPage } from '../pages/om-manthra/om-manthra';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { NotFoundPage } from '../pages/not-found/not-found';
     CitiesPage,
     PurohithListPage,
     PurohitDetailsPage,
-    NotFoundPage
+    NotFoundPage,
+    OmManthraPage
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,8 @@ import { NotFoundPage } from '../pages/not-found/not-found';
     CitiesPage,
     PurohithListPage,
     PurohitDetailsPage,
-    NotFoundPage
+    NotFoundPage,
+    OmManthraPage
   ],
   providers: [
     StatusBar,
