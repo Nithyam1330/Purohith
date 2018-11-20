@@ -13,6 +13,7 @@ import { CallNumber } from '@ionic-native/call-number';
 import { NotFoundPage } from '../pages/not-found/not-found';
 import { OmManthraPage } from '../pages/om-manthra/om-manthra';
 import { LandingPage } from '../pages/landing/landing';
+import { HeaderComponent } from '../components/header/header';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { LandingPage } from '../pages/landing/landing';
     PurohitDetailsPage,
     NotFoundPage,
     OmManthraPage,
-    LandingPage
+    LandingPage,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

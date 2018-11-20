@@ -3,20 +3,9 @@ page-landing {
         background-image: url(../../assets/imgs/background.png);
         background-size: cover;
         background-repeat: no-repeat;
+        margin-top: 60px;
     }
-    ion-navbar.toolbar {
-        height: 60px;
-    }
-    .toolbar-title.toolbar-title-md, 
-    .toolbar-title.toolbar-title-ios, 
-    .toolbar-title.toolbar-title-wp { 
-        color: yellow;
-        padding: 12px;
-        font-family: initial;
-        font-weight: 400;
-        font-size: 25px;
-        font-weight: bold;
-    }
+    
     .booking {
         text-align: center;
         margin: 80px 20px 20px 20px;
