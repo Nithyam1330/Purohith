@@ -1,0 +1,39 @@
+<ion-header (click)="navigateToCity()">
+  <ion-navbar hideBackButton="true">
+    <ion-grid>
+      <ion-row>
+        <ion-col text-start col-3>
+          <ion-avatar>
+            <img src="../../assets/imgs/logo-icon.png" height="55" width="55">
+          </ion-avatar>
+        </ion-col>
+        <ion-col text-center col-7>
+          <img src="../../assets/imgs/Purohit.png" style="padding-top: 6px;">
+        </ion-col>
+        <!-- <ion-col> -->
+        <!-- <ion-buttons end class="m-t-10"> -->
+        <!-- <button ion-button icon-only>
+              <ion-icon name="menu"></ion-icon>
+            </button> -->
+        <!-- </ion-buttons> -->
+        <!-- </ion-col> -->
+      </ion-row>
+    </ion-grid>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="bg-color">
+  <div class="booking">
+    <img src="../../assets/icon/purohit.png" height="100">
+    <div class="booking-btn" (click)="navigateToCitiesPage()">
+      <h2 class="label">BOOK A PUROHIT</h2>
+    </div>
+  </div>
+
+  <div class="booking">
+    <img src="../../assets/icon/om.png" height="100">
+    <div class="booking-btn" (click)="navigateToOmMantra()">
+      <h2 class="label">OM MANTRA</h2>
+    </div>
+  </div>
+</ion-content>

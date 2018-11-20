@@ -12,6 +12,7 @@ import { PurohitDetailsPage } from '../pages/purohit-details/purohit-details';
 import { CallNumber } from '@ionic-native/call-number';
 import { NotFoundPage } from '../pages/not-found/not-found';
 import { OmManthraPage } from '../pages/om-manthra/om-manthra';
+import { LandingPage } from '../pages/landing/landing';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { OmManthraPage } from '../pages/om-manthra/om-manthra';
     PurohithListPage,
     PurohitDetailsPage,
     NotFoundPage,
-    OmManthraPage
+    OmManthraPage,
+    LandingPage
   ],
   imports: [
     BrowserModule,
@@ -35,13 +37,14 @@ import { OmManthraPage } from '../pages/om-manthra/om-manthra';
     PurohithListPage,
     PurohitDetailsPage,
     NotFoundPage,
-    OmManthraPage
+    OmManthraPage,
+    LandingPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     CallNumber,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })
-export class AppModule {}
+export class AppModule { }
