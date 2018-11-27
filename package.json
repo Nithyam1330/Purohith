@@ -22,6 +22,7 @@
     "@angular/platform-browser-dynamic": "5.2.11",
     "@ionic-native/call-number": "^4.16.0",
     "@ionic-native/core": "~4.15.0",
+    "@ionic-native/launch-navigator": "^4.17.0",
     "@ionic-native/native-audio": "^4.17.0",
     "@ionic-native/splash-screen": "~4.15.0",
     "@ionic-native/status-bar": "~4.15.0",
@@ -57,7 +58,11 @@
       },
       "cordova-plugin-ionic-keyboard": {},
       "mx.ferreyra.callnumber": {},
-      "cordova-plugin-nativeaudio": {}
+      "cordova-plugin-nativeaudio": {},
+      "uk.co.workingedge.phonegap.plugin.launchnavigator": {
+        "OKHTTP_VERSION": "3.+",
+        "LOCATION_USAGE_DESCRIPTION": "This app requires access to your location for navigation purposes"
+      }
     },
     "platforms": [
       "ios",
