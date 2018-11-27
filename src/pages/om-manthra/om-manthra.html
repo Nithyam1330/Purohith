@@ -1,7 +1,14 @@
 <header></header>
-
-
-<ion-content padding>
-<button ion-button (click)="playAudio()" *ngIf="!isPlayMode">Play Audio</button>
-<button ion-button (click)="stopAudio()" *ngIf="isPlayMode">Stop Audio</button>
+<ion-content padding class="bg-color">
+    <div class="om-mantra">
+        <p class="label">OM MANTRA</p>
+        <div class="image">
+            <img src="../../assets/icon/om.png" height="175" />
+        </div>
+        <div class="start-stop" (click)="playAudio()">
+            <img src="../../assets/icon/location-icon.png">
+        </div>
+    </div>
+    <!-- <button ion-button (click)="playAudio()" *ngIf="!isPlayMode">Play Audio</button>
+<button ion-button (click)="stopAudio()" *ngIf="isPlayMode">Stop Audio</button> -->
 </ion-content>
