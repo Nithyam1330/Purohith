@@ -14,6 +14,7 @@ import { NotFoundPage } from '../pages/not-found/not-found';
 import { OmManthraPage } from '../pages/om-manthra/om-manthra';
 import { LandingPage } from '../pages/landing/landing';
 import { HeaderComponent } from '../components/header/header';
+import { ContactPage } from '../pages/contact/contact';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { HeaderComponent } from '../components/header/header';
     NotFoundPage,
     OmManthraPage,
     LandingPage,
-    HeaderComponent
+    HeaderComponent,
+    ContactPage
   ],
   imports: [
     BrowserModule,
@@ -40,7 +42,8 @@ import { HeaderComponent } from '../components/header/header';
     PurohitDetailsPage,
     NotFoundPage,
     OmManthraPage,
-    LandingPage
+    LandingPage,
+    ContactPage
   ],
   providers: [
     StatusBar,

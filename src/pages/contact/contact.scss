@@ -1,0 +1,68 @@
+page-contact {
+    @mixin text-center {
+        text-align: center;
+    }
+    @mixin label{
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        position: absolute;
+        font-family: sans-serif;
+    }
+    .bg-color {
+        background-image: url(../../assets/imgs/background-inner.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: 60px;
+    }
+    .contact-icon {
+        @include text-center();
+        margin-top: 25px;
+        .label {
+            @include text-center();
+            font-size: 35px;
+            color: white;
+            font-weight: bold;
+            font-family: sans-serif;
+            margin-left: 13px;
+            margin-top: 10px;
+        }
+        
+    }
+    .details-section {
+        @include text-center();
+        margin-top: 60px;
+        .purohitJi-heading {
+            color: #690D0D;
+            font-size: 25px;
+            font-weight: 500;
+        }
+    }
+    .address {
+        margin: 40px 0px 0px 40px;
+        position: relative;
+        .location {
+           @include label();
+            left: 42px;
+            top: -23px;
+        }
+    }
+    .email {
+        margin: 20px 0px 0px 40px;
+        position: relative;
+        .email-label {
+            @include label();
+            top: -2px;
+            left: 44px;        
+        }
+    }
+    .phone {
+        margin: 20px 0px 0px 40px;
+        position: relative;
+        .phone-label {
+            @include label();
+            top: -10px;
+            left: 52px;
+        }
+    }
+}

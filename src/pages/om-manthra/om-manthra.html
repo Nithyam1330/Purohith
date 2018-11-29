@@ -6,7 +6,8 @@
             <img src="../../assets/icon/om.png" height="175" />
         </div>
         <div class="start-stop" (click)="playAudio()">
-            <img src="../../assets/icon/location-icon.png">
+            <img src="../../assets/icon/location-icon.png" *ngIf="!isPlayMode">
+            <img src="../../assets/icon/phone.png" *ngIf="isPlayMode">
         </div>
     </div>
     <!-- <button ion-button (click)="playAudio()" *ngIf="!isPlayMode">Play Audio</button>
