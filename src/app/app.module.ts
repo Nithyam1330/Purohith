@@ -15,6 +15,7 @@ import { OmManthraPage } from '../pages/om-manthra/om-manthra';
 import { LandingPage } from '../pages/landing/landing';
 import { HeaderComponent } from '../components/header/header';
 import { ContactPage } from '../pages/contact/contact';
+import { TabsPage } from '../pages/tabs/tabs';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ContactPage } from '../pages/contact/contact';
     OmManthraPage,
     LandingPage,
     HeaderComponent,
-    ContactPage
+    ContactPage,
+    TabsPage
   ],
   imports: [
     BrowserModule,
@@ -43,7 +45,8 @@ import { ContactPage } from '../pages/contact/contact';
     NotFoundPage,
     OmManthraPage,
     LandingPage,
-    ContactPage
+    ContactPage,
+    TabsPage
   ],
   providers: [
     StatusBar,

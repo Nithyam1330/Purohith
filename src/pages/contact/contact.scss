@@ -52,7 +52,7 @@ page-contact {
         position: relative;
         .email-label {
             @include label();
-            top: -2px;
+            top: -8px;
             left: 44px;        
         }
     }
@@ -62,7 +62,7 @@ page-contact {
         .phone-label {
             @include label();
             top: -10px;
-            left: 52px;
+            left: 42px;
         }
     }
 }
