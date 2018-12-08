@@ -9,6 +9,10 @@ page-contact {
         position: absolute;
         font-family: sans-serif;
     }
+    a {
+        color: blue;
+        text-decoration: underline;    
+    }
     .bg-color {
         background-image: url(../../assets/imgs/background-inner.png);
         background-size: cover;

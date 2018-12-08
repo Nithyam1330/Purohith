@@ -9,6 +9,10 @@ page-purohit-details {
     ion-navbar.toolbar {
         height: 60px;
     }
+    a {
+        color: blue;
+        text-decoration: underline;    
+    }
     .toolbar-title.toolbar-title-md, 
     .toolbar-title.toolbar-title-ios, 
     .toolbar-title.toolbar-title-wp { 

@@ -9,8 +9,9 @@
       <p text-center class="card-subheading">{{purohitInfo.type}}</p>
       <div class="locationDetails" (click)="openMaps(purohitInfo.address)">
         <img src="../../assets/icon/location-icon.png" class="location">
-        <span class="card-subheading">{{purohitInfo.address}}</span>
-        <button (click)="call()">Maps</button>
+        <span class="card-subheading">
+          <a>{{purohitInfo.address}}</a>
+        </span>
       </div>
       <div class="locationDetails">
         <img src="../../assets/icon/phone-icon.png" class="location">
