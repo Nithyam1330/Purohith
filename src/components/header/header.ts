@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { CitiesPage } from '../../pages/cities/cities';
+import { LandingPage } from '../../pages/landing/landing';
 
 @Component({
   selector: 'header',
@@ -12,6 +12,6 @@ export class HeaderComponent {
   }
 
   navigateToCity() {
-    this.navCtrl.push(CitiesPage);
+    this.navCtrl.push(LandingPage);
   }
 }

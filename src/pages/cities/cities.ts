@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { PurohithListPage } from '../purohith-list/purohith-list';
 import { NotFoundPage } from '../not-found/not-found';
+import { LanguageListPage } from '../language-list/language-list';
 
 
 @Component({
@@ -14,8 +14,9 @@ export class CitiesPage {
     //   this.platform.exitApp();
     // })
   }
-  goToPurohithList() {
-    this.navCtrl.push(PurohithListPage, {
+
+  goToLanguageList() {
+    this.navCtrl.push(LanguageListPage, {
       navParams: {
         data: 'Varanasi'
       }
@@ -25,7 +26,4 @@ export class CitiesPage {
   goToNotFound() {
     this.navCtrl.push(NotFoundPage);
   }
-  ionViewDidLoad() {
-  }
-
 }

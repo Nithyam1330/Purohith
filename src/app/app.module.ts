@@ -16,6 +16,7 @@ import { LandingPage } from '../pages/landing/landing';
 import { HeaderComponent } from '../components/header/header';
 import { ContactPage } from '../pages/contact/contact';
 import { TabsPage } from '../pages/tabs/tabs';
+import { LanguageListPage } from '../pages/language-list/language-list';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { TabsPage } from '../pages/tabs/tabs';
     LandingPage,
     HeaderComponent,
     ContactPage,
-    TabsPage
+    TabsPage,
+    LanguageListPage
   ],
   imports: [
     BrowserModule,
@@ -46,7 +48,8 @@ import { TabsPage } from '../pages/tabs/tabs';
     OmManthraPage,
     LandingPage,
     ContactPage,
-    TabsPage
+    TabsPage,
+    LanguageListPage
   ],
   providers: [
     StatusBar,

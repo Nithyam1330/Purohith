@@ -10,14 +10,18 @@ import { CitiesPage } from '../cities/cities';
 })
 export class PurohithListPage {
   purohitList: any[] = [];
+  wholePurohitList: any[] = [];
+  key: string;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.key = this.navParams.data.navParams.key;
   }
 
   ionViewDidLoad() {
     this.initVaranasiList();
   }
   initVaranasiList() {
-    this.purohitList = new PurohithiList().list;
+    this.wholePurohitList = new PurohithiList().list;
+    this.purohitList = this.wholePurohitList.filter(x => x.key === this.key);
   }
 
   goToPurohitDetail(purohitInfo) {

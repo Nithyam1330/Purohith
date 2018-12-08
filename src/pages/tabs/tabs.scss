@@ -1,0 +1,23 @@
+page-tabs {
+    .ion-md-home {
+        content: url("../../assets/icon/home.png") !important; 
+    }
+    .ion-md-explore {
+        content: url("../../assets/icon/explore.png") !important; 
+    } 
+    .ion-md-stories {
+        content: url("../../assets/icon/stories.png") !important; 
+    }
+    .ion-md-contact {
+        content: url("../../assets/icon/contact.png") !important; 
+    } 
+    .tabs-md .tabbar {
+        background:	#690E0D;
+    } 
+    .tabs-md[tabsLayout=icon-top] .has-icon .tab-button-text {
+        color: white;
+    }
+    // .tabs-md[tabsLayout=icon-top] .has-icon .tab-button-text:active {
+    //     color: blue;
+    // }
+}

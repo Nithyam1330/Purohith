@@ -1,0 +1,21 @@
+<header></header>
+<ion-content padding class="bg-image">
+  <div text-center>
+    <img class="logo" src="../../assets/icon/varanasi-icon.png" />
+    <hr class="cities-horizantal">
+    <p class="label">{{languageInfo}}</p>
+    <hr class="cities-horizantal">
+  </div>
+  <div>
+    <ng-container *ngFor="let language of languages">
+      <ion-card class="card" (click)="navigateToPurohitList(language.key)">
+        <ion-item class="card-item">
+          <ion-avatar item-start>
+            <img src="../../assets/imgs/logo-icon.png">
+          </ion-avatar>
+          <h2 class="card-heading">{{language.type}}</h2>
+        </ion-item>
+      </ion-card>
+    </ng-container>
+  </div>
+</ion-content>

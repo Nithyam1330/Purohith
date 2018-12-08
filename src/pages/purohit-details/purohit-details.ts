@@ -27,7 +27,6 @@ export class PurohitDetailsPage {
 
   openMaps(selectedPlace) {
     let options: LaunchNavigatorOptions = {
-      // start: selectedPlace,
       app: this.launchNavigator.APP.GOOGLE_MAPS
     };
     
