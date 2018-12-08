@@ -1,6 +1,7 @@
 import { NavController, NavParams, Platform } from 'ionic-angular';
 import { Component } from '@angular/core';
 import { InAppBrowser, InAppBrowserOptions } from '@ionic-native/in-app-browser';
+import { ToastController } from 'ionic-angular';
 
 import { LandingPage } from '../landing/landing';
 import { ContactPage } from '../contact/contact';
@@ -14,12 +15,28 @@ import { ContactPage } from '../contact/contact';
 export class TabsPage {
   tab1Root = LandingPage;
   tab4Root = ContactPage;
-
+  backButton = 0;
   constructor(public navCtrl: NavController, public navParams: NavParams,
-    private iab: InAppBrowser, private platform: Platform) {
+    private iab: InAppBrowser, private platform: Platform, private toastCtrl: ToastController) {
     this.platform.registerBackButtonAction(() => {
-      this.platform.exitApp();
+      console.log(this.navCtrl.getActiveChildNav());
+      this.backButton++;
+      this.openToast();
+      setTimeout(() => {
+        this.backButton = 0;
+      }, 3000);
+      if (this.backButton === 2) {
+        this.platform.exitApp();
+      }
     })
+  }
+
+  openToast() {
+    const toast = this.toastCtrl.create({
+      message: 'Press again to exit',
+      duration: 2000
+    });
+    toast.present();
   }
 
   openStories() {
