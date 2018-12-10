@@ -5,12 +5,12 @@ export class LanguageList {
             key: 'hindi'
         },
         {
-            type: 'Telugu Pandits',
-            key: 'telugu'
+            type: 'Sanskrit Pandits',
+            key: 'sanskrit'
         },
         {
-            type: 'Bangala Pandits',
-            key: 'banagala'
+            type: 'Telugu Pandits',
+            key: 'telugu'
         },
         {
             type: 'Tamil Pandits',
@@ -19,6 +19,10 @@ export class LanguageList {
         {
             type: 'Kannada Pandits',
             key: 'kannada'
+        },
+        {
+            type: 'Marati Pandits',
+            key: 'marati'
         }
     ]
 }

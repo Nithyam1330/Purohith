@@ -3,7 +3,7 @@ page-om-manthra {
         text-align: center;
     }
     .bg-color {
-        background-image: url(../../assets/imgs/background-inner.png);
+        background-image: url(../../assets/imgs/background.png);
         background-size: cover;
         background-repeat: no-repeat;
         margin-top: 60px;
@@ -16,14 +16,14 @@ page-om-manthra {
             font-weight: bold;
             font-family: sans-serif;
             margin-left: 13px;
-            margin-top: 90px;
+            margin-top: 10px;
         }
         .image {
             @include text-center;
         }
         .start-stop {
             @include text-center;
-            margin-top: 40px;
+            margin-top: 85px;
         }
     }
 }
