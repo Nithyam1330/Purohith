@@ -5,9 +5,9 @@
         <div class="image">
             <img src="../../assets/icon/om.png" height="175" />
         </div>
-        <div class="start-stop" (click)="playAudio()">
-            <img src="../../assets/icon/play-icon.png" *ngIf="!isPlayMode">
-            <img src="../../assets/icon/play-icon-off.png" *ngIf="isPlayMode">
+        <div class="start-stop">
+            <img src="../../assets/icon/play-icon.png" (click)="playAudio()" *ngIf="!isPlayMode">
+            <img src="../../assets/icon/play-icon-off.png" (click)="stopAudio()" *ngIf="isPlayMode">
         </div>
     </div>
 </ion-content>

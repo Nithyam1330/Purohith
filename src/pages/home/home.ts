@@ -7,11 +7,8 @@ import { CitiesPage } from '../cities/cities';
   templateUrl: 'home.html'
 })
 export class HomePage {
-
   constructor(public navCtrl: NavController) {
-
-  }
-
+  } 
   skipLogin() {
     this.navCtrl.push(CitiesPage);
   }

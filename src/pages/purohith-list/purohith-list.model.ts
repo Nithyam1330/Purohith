@@ -342,7 +342,7 @@ export class PurohithiList {
             key: 'kannada'
         },
         {
-            image: '../../assets/imgs/profiles/Chandrakant Agasti.jpeg',
+            image: '../../assets/imgs/logo-icon.png',
             name: 'Chandrakant Agasti',
             experience: '40 Years Experience',
             address: 'Ahilyabai Ghat',
@@ -352,7 +352,7 @@ export class PurohithiList {
             key: 'marati'
         },
         {
-            image: '../../assets/imgs/profiles/Amit Agasti.jpeg',
+            image: '../../assets/imgs/logo-icon.png',
             name: 'Amit Agasti',
             experience: '15 Years Experience',
             address: 'Ahilyabai Ghat',
@@ -372,7 +372,7 @@ export class PurohithiList {
             key: 'marati'
         },
         {
-            image: '../../assets/imgs/profiles/Ghanshaym Sastri.jpeg',
+            image: '../../assets/imgs/logo-icon.png',
             name: 'Ghanshaym Sastri',
             experience: '25 Years Experience',
             address: 'Scindia Ghat',
@@ -388,6 +388,16 @@ export class PurohithiList {
             address: 'Dashashwamedh Ghat',
             phone: 7607646171,
             details: 'Purohit Raju Tiwari has 30 years experience in conducting all types of rituals',
+            type: 'Sanskrit Pandit',
+            key: 'sanskrit'
+        },
+        {
+            image: '../../assets/imgs/profiles/Pappu Tiwari.jpeg',
+            name: 'Pappu Tiwari',
+            experience: '50 Years Experience',
+            address: 'Dashashwamedh Ghat',
+            phone: 9792678868,
+            details: 'Purohit Pappu Tiwari has 50 years experience in conducting all types of rituals',
             type: 'Sanskrit Pandit',
             key: 'sanskrit'
         },
