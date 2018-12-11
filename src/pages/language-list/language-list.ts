@@ -18,7 +18,8 @@ export class LanguageListPage {
   navigateToPurohitList(key) {
     this.navCtrl.push(PurohithListPage, {
       navParams: {
-        key: key
+        key: key,
+        cityName: 'Varanasi'
       }
     });
   }

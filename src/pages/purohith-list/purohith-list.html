@@ -1,8 +1,7 @@
 <header></header>
 <ion-content padding class="bg-color">
-  <h1 text-center padding-top class="heading">{{key | titlecase}} Pandits</h1>
-  <h1 text-center class="sub-heading">in Varanasi</h1>
-
+  <h1 text-center padding-top class="heading">{{key === '' ? '' : key | titlecase }} Pandits</h1>
+  <h1 text-center class="sub-heading">in {{cityName}}</h1>
   <ng-container *ngFor="let purohit of purohitList">
     <ion-card class="card" (click)="goToPurohitDetail(purohit)">
       <ion-item class="card-item">

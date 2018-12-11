@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { NotFoundPage } from '../not-found/not-found';
 import { LanguageListPage } from '../language-list/language-list';
+import { PurohithListPage } from '../purohith-list/purohith-list';
 
 
 @Component({
@@ -10,9 +11,6 @@ import { LanguageListPage } from '../language-list/language-list';
 })
 export class CitiesPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    // this.platform.registerBackButtonAction(() => {
-    //   this.platform.exitApp();
-    // })
   }
 
   goToLanguageList() {
@@ -21,6 +19,15 @@ export class CitiesPage {
         data: 'Varanasi'
       }
     });
+  }
+
+  goToPurohitList(CityName) {
+    this.navCtrl.push(PurohithListPage, {
+      navParams: {
+        key: '',
+        cityName: CityName
+      }
+    })
   }
 
   goToNotFound() {

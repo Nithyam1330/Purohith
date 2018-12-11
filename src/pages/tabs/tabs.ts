@@ -24,5 +24,4 @@ export class TabsPage {
     }
     this.iab.create('http://www.purohitjimagic.com/blog/', '_self', options);
   }
-
 }
