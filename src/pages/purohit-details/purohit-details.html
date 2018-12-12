@@ -2,8 +2,8 @@
 <ion-content padding class="bg-color">
   <ion-card class="card">
     <ion-item class="card-item" text-wrap>
-      <div>
-        <img class="img-photo" [src]="purohitInfo.image" height="100" width="100">
+      <div (click)="openModel(purohitInfo.image)">
+        <img class="img-photo" [src]="purohitInfo.image" height="100" width="100" >
       </div>
       <h2 text-center class="card-heading">{{purohitInfo.name}}</h2>
       <p text-center class="card-subheading">{{purohitInfo.type}}</p>

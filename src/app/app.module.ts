@@ -17,6 +17,7 @@ import { HeaderComponent } from '../components/header/header';
 import { ContactPage } from '../pages/contact/contact';
 import { TabsPage } from '../pages/tabs/tabs';
 import { LanguageListPage } from '../pages/language-list/language-list';
+import { PhotoViewerPage } from '../pages/photo-viewer/photo-viewer';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { LanguageListPage } from '../pages/language-list/language-list';
     HeaderComponent,
     ContactPage,
     TabsPage,
-    LanguageListPage
+    LanguageListPage,
+    PhotoViewerPage
   ],
   imports: [
     BrowserModule,
@@ -49,7 +51,8 @@ import { LanguageListPage } from '../pages/language-list/language-list';
     LandingPage,
     ContactPage,
     TabsPage,
-    LanguageListPage
+    LanguageListPage,
+    PhotoViewerPage
   ],
   providers: [
     StatusBar,
