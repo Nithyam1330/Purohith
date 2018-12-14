@@ -33,4 +33,9 @@ export class OmManthraPage implements OnDestroy {
     this.stopAudio();
     this.unloadAudio();
   }
+
+  ionViewDidLeave(){
+    this.stopAudio();
+    this.unloadAudio();
+  }
 }

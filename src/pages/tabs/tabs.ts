@@ -4,6 +4,7 @@ import { InAppBrowser, InAppBrowserOptions } from '@ionic-native/in-app-browser'
 
 import { LandingPage } from '../landing/landing';
 import { ContactPage } from '../contact/contact';
+import { ExplorePage } from '../explore/explore';
 
 @Component({
   selector: 'page-tabs',
@@ -14,6 +15,7 @@ import { ContactPage } from '../contact/contact';
 export class TabsPage {
   tab1Root = LandingPage;
   tab4Root = ContactPage;
+  tab2Root = ExplorePage;
   constructor(public navCtrl: NavController, public navParams: NavParams,
     private iab: InAppBrowser) {
   }

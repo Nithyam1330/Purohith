@@ -19,7 +19,6 @@ export class ContactPage {
   }
 
   openMaps(selectedPlace) {
-    console.log(selectedPlace);
     let options: LaunchNavigatorOptions = {
       app: this.launchNavigator.APP.GOOGLE_MAPS
     };

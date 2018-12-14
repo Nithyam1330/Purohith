@@ -1,0 +1,22 @@
+<!-- <ion-header>
+
+  <ion-navbar>
+    <ion-title>explore</ion-title>
+  </ion-navbar>
+
+</ion-header> -->
+
+<ion-content padding class="bg-image">
+  <div class="searchbar">
+    <ion-searchbar (ionInput)="getItems($event)" placeholder="Search by city"></ion-searchbar>
+    <p *ngIf="items.length === 0" class="error">No City found</p>
+    <ion-list>
+      <ion-item class="item" *ngFor="let item of items" (click)="navigateToParticularCity(item)">
+        <ion-thumbnail item-start>
+          <img [src]="item.icon">
+        </ion-thumbnail>
+        {{ item.cityName }}
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

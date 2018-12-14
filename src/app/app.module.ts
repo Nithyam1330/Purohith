@@ -18,6 +18,7 @@ import { ContactPage } from '../pages/contact/contact';
 import { TabsPage } from '../pages/tabs/tabs';
 import { LanguageListPage } from '../pages/language-list/language-list';
 import { PhotoViewerPage } from '../pages/photo-viewer/photo-viewer';
+import { ExplorePage } from '../pages/explore/explore';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { PhotoViewerPage } from '../pages/photo-viewer/photo-viewer';
     ContactPage,
     TabsPage,
     LanguageListPage,
-    PhotoViewerPage
+    PhotoViewerPage,
+    ExplorePage
   ],
   imports: [
     BrowserModule,
@@ -52,7 +54,8 @@ import { PhotoViewerPage } from '../pages/photo-viewer/photo-viewer';
     ContactPage,
     TabsPage,
     LanguageListPage,
-    PhotoViewerPage
+    PhotoViewerPage,
+    ExplorePage
   ],
   providers: [
     StatusBar,

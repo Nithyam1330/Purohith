@@ -1,0 +1,21 @@
+page-explore {
+    .bg-image {
+        background-image: url(../../assets/imgs/background.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .searchbar {
+        .item {
+            font-weight: bold;
+            font-size: 20px;
+            color: #690E0D;
+            background-color: transparent;
+        }
+        .error {
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+            color: #690E0D;
+        }
+    }
+}
