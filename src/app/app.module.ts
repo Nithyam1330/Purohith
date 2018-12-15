@@ -19,6 +19,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { LanguageListPage } from '../pages/language-list/language-list';
 import { PhotoViewerPage } from '../pages/photo-viewer/photo-viewer';
 import { ExplorePage } from '../pages/explore/explore';
+import { BackbuttonProvider } from '../providers/backbutton/backbutton';
 
 @NgModule({
   declarations: [
@@ -61,7 +62,8 @@ import { ExplorePage } from '../pages/explore/explore';
     StatusBar,
     SplashScreen,
     CallNumber,
-    { provide: ErrorHandler, useClass: IonicErrorHandler }
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
+    BackbuttonProvider
   ]
 })
 export class AppModule { }

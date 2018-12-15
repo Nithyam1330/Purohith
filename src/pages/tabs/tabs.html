@@ -1,6 +1,6 @@
 <ion-tabs selectedIndex="0">
   <ion-tab [root]="tab1Root" tabTitle="HOME" tabIcon="home"></ion-tab>
-  <ion-tab [root]="tab2Root" tabTitle="EXPLORE" tabIcon="explore"></ion-tab>
+  <ion-tab (ionSelect)="navigateToTabs()" tabTitle="EXPLORE" tabIcon="explore"></ion-tab>
   <ion-tab (ionSelect)="openStories()" tabTitle="STORIES" tabIcon="stories"></ion-tab>
-  <ion-tab [root]="tab4Root" tabTitle="CONTACT" tabIcon="contact"></ion-tab>
+  <ion-tab (ionSelect)="navigateToContact()" tabTitle="CONTACT" tabIcon="contact"></ion-tab>
 </ion-tabs>

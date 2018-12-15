@@ -5,6 +5,7 @@ import { InAppBrowser, InAppBrowserOptions } from '@ionic-native/in-app-browser'
 import { LandingPage } from '../landing/landing';
 import { ContactPage } from '../contact/contact';
 import { ExplorePage } from '../explore/explore';
+import { BackbuttonProvider } from '../../providers/backbutton/backbutton';
 
 @Component({
   selector: 'page-tabs',
@@ -17,7 +18,8 @@ export class TabsPage {
   tab4Root = ContactPage;
   tab2Root = ExplorePage;
   constructor(public navCtrl: NavController, public navParams: NavParams,
-    private iab: InAppBrowser) {
+    private iab: InAppBrowser,
+    private backButtonService: BackbuttonProvider) {
   }
 
   openStories() {
@@ -25,5 +27,14 @@ export class TabsPage {
       location: 'no'
     }
     this.iab.create('http://www.purohitjimagic.com/blog/', '_self', options);
+  }
+
+  navigateToTabs() {
+    this.backButtonService.setIsOnLandingPage(false);
+    this.navCtrl.push(ExplorePage);
+  }
+  navigateToContact() {
+    this.backButtonService.setIsOnLandingPage(false);
+    this.navCtrl.push(ContactPage);
   }
 }
