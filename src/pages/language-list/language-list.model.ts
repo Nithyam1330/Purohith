@@ -21,8 +21,8 @@ export class LanguageList {
             key: 'kannada'
         },
         {
-            type: 'Marati Pandits',
-            key: 'marati'
+            type: 'Marathi Pandits',
+            key: 'Marathi'
         }
     ]
 }

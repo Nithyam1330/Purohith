@@ -3,7 +3,6 @@ import { NavController, NavParams, Platform, ToastController } from 'ionic-angul
 import { OmManthraPage } from '../om-manthra/om-manthra';
 import { CitiesPage } from '../cities/cities';
 import { BackbuttonProvider } from '../../providers/backbutton/backbutton';
-import { TabsPage } from '../tabs/tabs';
 
 @Component({
   selector: 'page-landing',
@@ -16,22 +15,7 @@ export class LandingPage {
     private backButtonService: BackbuttonProvider) {
     this.backButtonService.getIsOnLandingPage().subscribe(res => {
       this.isOnLandingPage = res;
-      console.log(this.isOnLandingPage);
     });
-    // this.platform.registerBackButtonAction(() => {
-    //   if (this.isOnLandingPage) {
-    //     this.backButton++;
-    //     this.openToast();
-    //     setTimeout(() => {
-    //       this.backButton = 0;
-    //     }, 3000);
-    //     if (this.backButton === 2) {
-    //       this.platform.exitApp();
-    //     }
-    //   } else {
-    //     this.navCtrl.pop();
-    //   }
-    // })
   }
 
   ionViewDidEnter() {
@@ -52,7 +36,6 @@ export class LandingPage {
     this.navCtrl.push(OmManthraPage);
   }
   ionViewDidLeave() {
-    console.log('view unload');
     this.isOnLandingPage = false;
   }
 }

@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams, ModalController, Platform, ViewController } from 'ionic-angular';
+import { NavController, NavParams, ModalController, ViewController } from 'ionic-angular';
 import { CallNumber } from '@ionic-native/call-number';
 import { CitiesPage } from '../cities/cities';
 import { LaunchNavigator, LaunchNavigatorOptions } from '@ionic-native/launch-navigator';
 import { PhotoViewerPage } from '../photo-viewer/photo-viewer';
+import { ToastController } from 'ionic-angular';
 
 @Component({
   selector: 'page-purohit-details',
@@ -14,7 +15,7 @@ export class PurohitDetailsPage {
   purohitInfo: any;
   modalRef;
   constructor(public navCtrl: NavController, public navParams: NavParams, private callNumber: CallNumber, private launchNavigator: LaunchNavigator,
-    private modelCtrl: ModalController,  private platform: Platform, public viewCtrl: ViewController) {
+    private modelCtrl: ModalController, public viewCtrl: ViewController, public toastCtrl: ToastController) {
     this.purohitInfo = this.navParams.get('data');
   }
 
@@ -39,9 +40,21 @@ export class PurohitDetailsPage {
       );
   }
   openModel(image) {
-    this.modalRef = this.modelCtrl.create(PhotoViewerPage, {
-      purohithImage: image
+    if (image !== '../../assets/imgs/logo-icon.png') {
+      this.modalRef = this.modelCtrl.create(PhotoViewerPage, {
+        purohithImage: image
+      });
+      this.modalRef.present();
+    } else {
+      this.presentToast();
+    }
+  }
+
+  presentToast() {
+    const toast = this.toastCtrl.create({
+      message: 'No Image found',
+      duration: 2000
     });
-    this.modalRef.present();
+    toast.present();
   }
 }

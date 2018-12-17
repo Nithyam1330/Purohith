@@ -12,7 +12,6 @@ export class OmManthraPage implements OnDestroy {
   isPlayMode = false;
   constructor(public navCtrl: NavController, public navParams: NavParams, private nativeAudio: NativeAudio) {
     this.nativeAudio.preloadComplex('omManthra', 'assets/audio/om2.mp3', 1, 1, 0).then(res => {
-      console.log(res);
     });
   }
 

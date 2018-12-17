@@ -385,8 +385,8 @@ export class PurohithiList {
                 address: 'Ahilyabai Ghat',
                 phone: 6306129281,
                 details: 'Purohit Chandrakant Agasti has 40 years experience in conducting all types of rituals',
-                type: 'Marati Pandit',
-                key: 'marati',
+                type: 'Marathi Pandit',
+                key: 'Marathi',
                 cityName: 'Varanasi'
             },
             {
@@ -396,8 +396,8 @@ export class PurohithiList {
                 address: 'Ahilyabai Ghat',
                 phone: 9838615331,
                 details: 'Purohit Amit Agasti has 15 years experience in conducting all types of rituals',
-                type: 'Marati Pandit',
-                key: 'marati',
+                type: 'Marathi Pandit',
+                key: 'Marathi',
                 cityName: 'Varanasi'
             },
             {
@@ -407,8 +407,8 @@ export class PurohithiList {
                 address: 'Ahilyabai Ghat',
                 phone: 9889785125,
                 details: 'Purohit Vikash Chandra has 15 years experience in conducting all types of rituals',
-                type: 'Marati Pandit',
-                key: 'marati',
+                type: 'Marathi Pandit',
+                key: 'Marathi',
                 cityName: 'Varanasi'
             },
             {
@@ -418,8 +418,8 @@ export class PurohithiList {
                 address: 'Scindia Ghat',
                 phone: 9936869663,
                 details: 'Purohit Ghanshaym Sastri has 25 years experience in conducting all types of rituals',
-                type: 'Marati Pandit',
-                key: 'marati',
+                type: 'Marathi Pandit',
+                key: 'Marathi',
                 cityName: 'Varanasi'
             },
             {
