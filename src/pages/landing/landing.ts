@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams, Platform, ToastController } from 'ionic-angular';
+import { NavController, NavParams, ToastController } from 'ionic-angular';
 import { OmManthraPage } from '../om-manthra/om-manthra';
 import { CitiesPage } from '../cities/cities';
 import { BackbuttonProvider } from '../../providers/backbutton/backbutton';
@@ -11,7 +11,7 @@ import { BackbuttonProvider } from '../../providers/backbutton/backbutton';
 export class LandingPage {
   backButton = 0;
   isOnLandingPage = true;
-  constructor(public navCtrl: NavController, public navParams: NavParams, private platform: Platform, private toastCtrl: ToastController,
+  constructor(public navCtrl: NavController, public navParams: NavParams, private toastCtrl: ToastController,
     private backButtonService: BackbuttonProvider) {
     this.backButtonService.getIsOnLandingPage().subscribe(res => {
       this.isOnLandingPage = res;
