@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams, ModalController, ViewController } from 'ionic-angular';
-import { CallNumber } from '@ionic-native/call-number';
 import { CitiesPage } from '../cities/cities';
 import { LaunchNavigator, LaunchNavigatorOptions } from '@ionic-native/launch-navigator';
 import { PhotoViewerPage } from '../photo-viewer/photo-viewer';
@@ -14,15 +13,13 @@ import { ToastController } from 'ionic-angular';
 export class PurohitDetailsPage {
   purohitInfo: any;
   modalRef;
-  constructor(public navCtrl: NavController, public navParams: NavParams, private callNumber: CallNumber, private launchNavigator: LaunchNavigator,
+  constructor(public navCtrl: NavController, public navParams: NavParams, private launchNavigator: LaunchNavigator,
     private modelCtrl: ModalController, public viewCtrl: ViewController, public toastCtrl: ToastController) {
     this.purohitInfo = this.navParams.get('data');
   }
 
   call() {
-    this.callNumber.callNumber(this.purohitInfo.phone, true)
-      .then(res => { })
-      .catch(err => { });
+    window.open('tel:' + this.purohitInfo.phone);
   }
   navigateToCity() {
     this.navCtrl.push(CitiesPage);

@@ -9,7 +9,6 @@ import { HomePage } from '../pages/home/home';
 import { CitiesPage } from '../pages/cities/cities';
 import { PurohithListPage } from '../pages/purohith-list/purohith-list';
 import { PurohitDetailsPage } from '../pages/purohit-details/purohit-details';
-import { CallNumber } from '@ionic-native/call-number';
 import { NotFoundPage } from '../pages/not-found/not-found';
 import { OmManthraPage } from '../pages/om-manthra/om-manthra';
 import { LandingPage } from '../pages/landing/landing';
@@ -61,7 +60,6 @@ import { BackbuttonProvider } from '../providers/backbutton/backbutton';
   providers: [
     StatusBar,
     SplashScreen,
-    CallNumber,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     BackbuttonProvider
   ]

@@ -1,22 +1,16 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { CallNumber } from '@ionic-native/call-number';
 import { LaunchNavigator, LaunchNavigatorOptions } from '@ionic-native/launch-navigator';
 
 @Component({
   selector: 'page-contact',
   templateUrl: 'contact.html',
-  providers: [CallNumber, LaunchNavigator]
+  providers: [LaunchNavigator]
 })
 export class ContactPage {
-  constructor(public navCtrl: NavController, public navParams: NavParams, private callNumber: CallNumber, private launchNavigator: LaunchNavigator) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private launchNavigator: LaunchNavigator) {
   }
 
-  call(number) {
-    this.callNumber.callNumber(number, true)
-      .then(res => { })
-      .catch(err => { });
-  }
 
   openMaps(selectedPlace) {
     let options: LaunchNavigatorOptions = {
